@@ -257,6 +257,28 @@ main {
     color: #0c5460;
 }
 
+#popup-body .special-note {
+    background: #f8f9fa;
+    border: 2px solid #6c757d;
+    border-left: 5px solid #6f42c1;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #495057;
+    font-style: italic;
+}
+
+#popup-body .special-note a {
+    color: #6f42c1;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#popup-body .special-note a:hover {
+    color: #5a32a3;
+    text-decoration: none;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

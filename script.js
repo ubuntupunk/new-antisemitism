@@ -66,7 +66,9 @@ const popupContent = {
                 <strong>Recognition:</strong> No ethnic or religious group should have to pass political litmus tests to be accepted or treated with respect.
             </div>
             <p>Jews, like all people, hold diverse political views and shouldn't be judged as a collective based on any single issue.</p>
-            <p>Subjecting individuals to inquiries on the basis of political or religious affiliation merely repeats the mistakes of the Spanish Inquisition. Admitting an inquiry, one which may seek to absolve or apportion guilt, is a slippery slope, with unintended consquences such as a intolerance and denial of religious, cultural and other rights to the group as a whole.</p>
+            <div class="special-note">
+                <strong>Historical Note:</strong> Subjecting individuals to inquiries on the basis of political or religious affiliation merely repeats the mistakes of the <a href="https://en.wikipedia.org/wiki/Spanish_Inquisition" target="_blank" rel="noopener noreferrer">Spanish Inquisition</a>. Admitting an inquiry, one which may seek to absolve or apportion guilt, is a slippery slope, with unintended consequences such as intolerance and denial of religious, cultural and other rights to the group as a whole. As <a href="https://en.wikipedia.org/wiki/Thomas_Jefferson" target="_blank" rel="noopener noreferrer">Thomas Jefferson</a> wrote in his Virginia Statute for Religious Freedom, the civil rights of citizens should not depend upon their religious opinions.
+            </div>
         `
     },
     
@@ -140,6 +142,33 @@ const popupContent = {
                 <strong>Urgent Response:</strong> Genocidal threats against any group require immediate attention from law enforcement and community protection measures.
             </div>
             <p>All people have the right to exist safely and with dignity, regardless of their ethnicity, religion, or nationality.</p>
+        `
+    },
+    
+    conclusion: {
+        title: "The World's Oldest Hatred: Historical Antisemitism",
+        content: `
+            <p>Antisemitism has persisted for over two millennia, taking different forms across cultures and time periods, but always targeting Jewish people for persecution.</p>
+            
+            <h4>Historical Examples:</h4>
+            <ul>
+                <li><strong>Blood Libel (12th century onward):</strong> False accusations that Jews murdered Christian children for religious rituals, leading to massacres across Europe</li>
+                <li><strong>The Spanish Inquisition (1478-1834):</strong> Forced conversion, expulsion, and execution of Jews in Spain and its territories</li>
+                <li><strong>Pogroms (19th-20th centuries):</strong> Organized violent attacks against Jewish communities, particularly in Eastern Europe</li>
+                <li><strong>The Dreyfus Affair (1894-1906):</strong> French military officer falsely accused of treason, exposing deep antisemitic sentiment in French society</li>
+                <li><strong>The Holocaust (1933-1945):</strong> Nazi Germany's systematic murder of six million Jews and attempt at complete extermination</li>
+                <li><strong>Soviet Antisemitism (1917-1991):</strong> State-sponsored persecution disguised as anti-Zionism and anti-cosmopolitanism</li>
+            </ul>
+            
+            <div class="educational-tip">
+                <strong>Pattern Recognition:</strong> Throughout history, antisemitism has often served as a warning sign of broader societal breakdown and targeting of minority groups.
+            </div>
+            
+            <div class="warning">
+                <strong>Contemporary Relevance:</strong> Understanding these historical patterns helps us recognize and counter modern forms of antisemitism and other forms of hatred.
+            </div>
+            
+            <p>By studying this history, we honor the memory of victims and work to prevent future atrocities against any group.</p>
         `
     }
 };
