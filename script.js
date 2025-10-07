@@ -224,15 +224,43 @@ function drawConnectionLines() {
         ['start-box', 'replacement-box'],
         ['start-box', 'admission-box'],
         
+        // Horizontal connections within level 1
+        ['denial-box', 'replacement-box'],
+        ['replacement-box', 'admission-box'],
+        
         // From level 1 to level 2
         ['denial-box', 'distinguish-box'],
         ['replacement-box', 'identity-box'],
         ['admission-box', 'hitler-box'],
         
+        // Cross connections from level 1 to level 2
+        ['denial-box', 'identity-box'],
+        ['denial-box', 'hitler-box'],
+        ['replacement-box', 'distinguish-box'],
+        ['replacement-box', 'hitler-box'],
+        ['admission-box', 'distinguish-box'],
+        ['admission-box', 'identity-box'],
+        
+        // Horizontal connections within level 2
+        ['distinguish-box', 'identity-box'],
+        ['identity-box', 'hitler-box'],
+        
         // From level 2 to level 3
         ['distinguish-box', 'racism-box'],
         ['identity-box', 'promised-land-box'],
         ['hitler-box', 'destroy-box'],
+        
+        // Cross connections from level 2 to level 3
+        ['distinguish-box', 'promised-land-box'],
+        ['distinguish-box', 'destroy-box'],
+        ['identity-box', 'racism-box'],
+        ['identity-box', 'destroy-box'],
+        ['hitler-box', 'racism-box'],
+        ['hitler-box', 'promised-land-box'],
+        
+        // Horizontal connections within level 3
+        ['racism-box', 'promised-land-box'],
+        ['promised-land-box', 'destroy-box'],
         
         // From level 3 to conclusion
         ['racism-box', 'conclusion-box'],
