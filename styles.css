@@ -279,6 +279,33 @@ main {
     text-decoration: none;
 }
 
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #bdc3c7;
+    text-decoration: underline;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

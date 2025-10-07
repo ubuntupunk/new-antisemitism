@@ -156,6 +156,7 @@ const popupContent = {
                 <li><strong>The Spanish Inquisition (1478-1834):</strong> Forced conversion, expulsion, and execution of Jews in Spain and its territories</li>
                 <li><strong>Pogroms (19th-20th centuries):</strong> Organized violent attacks against Jewish communities, particularly in Eastern Europe</li>
                 <li><strong>The Dreyfus Affair (1894-1906):</strong> French military officer falsely accused of treason, exposing deep antisemitic sentiment in French society</li>
+                <li><strong>The Farhud (1941):</strong> Violent pogrom in Baghdad, Iraq, where over 180 Jews were murdered and hundreds wounded in a two-day massacre that marked the beginning of the end for Iraq's ancient Jewish community</li>
                 <li><strong>The Holocaust (1933-1945):</strong> Nazi Germany's systematic murder of six million Jews and attempt at complete extermination</li>
                 <li><strong>Soviet Antisemitism (1917-1991):</strong> State-sponsored persecution disguised as anti-Zionism and anti-cosmopolitanism</li>
             </ul>
