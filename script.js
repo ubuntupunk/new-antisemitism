@@ -5,7 +5,7 @@ const popupContent = {
     start: {
         title: "Understanding Modern Antisemitism",
         content: `
-            <p>This educational tool helps identify patterns in antisemitic rhetoric that have evolved from historical antisemitism and continue today.</p>
+            <p>This educational tool helps identify new patterns in antisemitic rhetoric that have evolved from historical antisemitism and continue today.</p>
             <div class="educational-tip">
                 <strong>Educational Goal:</strong> By understanding these patterns, we can better recognize and counter hate speech and discrimination in all its forms.
             </div>
@@ -14,7 +14,7 @@ const popupContent = {
     },
     
     denial: {
-        title: "The 'I'm Not Antisemitic, But...' Pattern",
+        title: "The 'I'm Not Antisemitic, But...' misdirection",
         content: `
             <p>This phrase is often used as a disclaimer before making antisemitic statements. It's a common rhetorical device that attempts to provide cover for prejudiced views.</p>
             <div class="warning">
@@ -66,6 +66,7 @@ const popupContent = {
                 <strong>Recognition:</strong> No ethnic or religious group should have to pass political litmus tests to be accepted or treated with respect.
             </div>
             <p>Jews, like all people, hold diverse political views and shouldn't be judged as a collective based on any single issue.</p>
+            <p>Subjecting individuals to inquiries on the basis of political or religious affiliation merely repeats the mistakes of the Spanish Inquisition. Admitting an inquiry, one which may seek to absolve or apportion guilt, is a slippery slope, with unintended consquences such as a intolerance and denial of religious, cultural and other rights to the group as a whole.</p>
         `
     },
     
@@ -103,6 +104,9 @@ const popupContent = {
             <p>This argument attempts to label Jewish national self-determination as racism while often ignoring the racist persecution that led to the need for such self-determination.</p>
             <div class="warning">
                 <strong>Double Standard:</strong> This often applies different standards to Jewish national aspirations than to other peoples.
+            </div>
+            <div class="educational-tip">
+                <strong>Historical Note:</strong> The UN passed Resolution 3379 in 1975 equating Zionism with racism, but this was overturned by Resolution 46/86 in 1991, recognizing that the original resolution was based on prejudice rather than fact.
             </div>
             <div class="educational-tip">
                 <strong>Complexity:</strong> Issues of nationalism, self-determination, and minority rights are complex and deserve nuanced discussion, not simplistic labels.
