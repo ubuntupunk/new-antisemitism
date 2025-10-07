@@ -85,6 +85,8 @@ main {
     cursor: pointer;
     transition: all 0.3s ease;
     color: #ecf0f1;
+    position: relative;
+    z-index: 10;
 }
 
 .start-box:hover {
@@ -114,6 +116,7 @@ main {
     transition: all 0.3s ease;
     color: #ecf0f1;
     position: relative;
+    z-index: 5;
 }
 
 .box:hover {
@@ -127,6 +130,28 @@ main {
     margin: 0;
 }
 
+/* Avatar styling */
+.avatar-container {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #ecf0f1;
+    background: #8b0000;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.box:hover .avatar-image {
+    border-color: #ffffff;
+    transform: scale(1.1);
+}
+
 .conclusion {
     background: #e74c3c;
     color: white;
@@ -136,6 +161,8 @@ main {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .educational-note {
