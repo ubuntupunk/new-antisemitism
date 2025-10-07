@@ -5,11 +5,11 @@ const popupContent = {
     start: {
         title: "Understanding Modern Antisemitism",
         content: `
-            <p>This educational tool helps identify patterns in antisemitic rhetoric that have persisted throughout history and continue today.</p>
+            <p>This educational tool helps identify patterns in antisemitic rhetoric that have evolved from historical antisemitism and continue today.</p>
             <div class="educational-tip">
                 <strong>Educational Goal:</strong> By understanding these patterns, we can better recognize and counter hate speech and discrimination in all its forms.
             </div>
-            <p>The flowchart below shows how antisemitic arguments often follow predictable patterns, regardless of how they're presented.</p>
+            <p>The flowchart below shows how contemporary antisemitic arguments often follow predictable patterns, regardless of how they're presented.</p>
         `
     },
     
@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.close-btn');
     const boxes = document.querySelectorAll('[data-popup]');
 
+    // Draw connection lines between boxes
+    drawConnectionLines();
+
     // Add click event listeners to all boxes
     boxes.forEach(box => {
         box.addEventListener('click', function() {
@@ -207,6 +210,73 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Educational Antisemitism Awareness Tool Loaded');
     console.log('Purpose: To help users recognize patterns of hate speech and discrimination');
     console.log('This tool is for educational purposes only');
+});
+
+// Function to draw connection lines between boxes
+function drawConnectionLines() {
+    const svg = document.getElementById('connection-lines');
+    if (!svg) return;
+
+    // Define the connections based on the flowchart
+    const connections = [
+        // From start box to level 1
+        ['start-box', 'denial-box'],
+        ['start-box', 'replacement-box'],
+        ['start-box', 'admission-box'],
+        
+        // From level 1 to level 2
+        ['denial-box', 'distinguish-box'],
+        ['replacement-box', 'identity-box'],
+        ['admission-box', 'hitler-box'],
+        
+        // From level 2 to level 3
+        ['distinguish-box', 'racism-box'],
+        ['identity-box', 'promised-land-box'],
+        ['hitler-box', 'destroy-box'],
+        
+        // From level 3 to conclusion
+        ['racism-box', 'conclusion-box'],
+        ['promised-land-box', 'conclusion-box'],
+        ['destroy-box', 'conclusion-box']
+    ];
+
+    // Helper function to get center coordinates of an element
+    function getElementCenter(elementId) {
+        const element = document.getElementById(elementId);
+        if (!element) return null;
+        
+        const rect = element.getBoundingClientRect();
+        const containerRect = svg.getBoundingClientRect();
+        
+        return {
+            x: rect.left + rect.width / 2 - containerRect.left,
+            y: rect.top + rect.height / 2 - containerRect.top
+        };
+    }
+
+    // Clear existing lines
+    svg.innerHTML = '';
+
+    // Draw each connection
+    connections.forEach(([fromId, toId]) => {
+        const fromPos = getElementCenter(fromId);
+        const toPos = getElementCenter(toId);
+        
+        if (fromPos && toPos) {
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', fromPos.x);
+            line.setAttribute('y1', fromPos.y);
+            line.setAttribute('x2', toPos.x);
+            line.setAttribute('y2', toPos.y);
+            line.setAttribute('class', 'connection-line');
+            svg.appendChild(line);
+        }
+    });
+}
+
+// Redraw lines on window resize
+window.addEventListener('resize', function() {
+    setTimeout(drawConnectionLines, 100);
 });
 
 // Accessibility improvements

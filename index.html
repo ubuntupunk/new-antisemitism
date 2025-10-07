@@ -3,78 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding Antisemitic Rhetoric - Educational Guide</title>
+    <title>Understanding the New Antisemitic Rhetoric - Educational Guide</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Understanding Antisemitic Rhetoric</h1>
+        <h1>Understanding the New Antisemitic Rhetoric</h1>
         <p>An educational guide to recognizing hate speech and discrimination patterns</p>
     </header>
 
     <main>
         <div class="flowchart-container">
-            <div class="start-box" data-popup="start">
+            <!-- SVG overlay for connection lines -->
+            <svg class="connections-overlay" id="connection-lines">
+                <!-- Lines will be drawn dynamically by JavaScript -->
+            </svg>
+
+            <div class="start-box" data-popup="start" id="start-box">
                 <h3>Start your journey into the New Anti-Semitism</h3>
             </div>
 
-            <!-- Arrows from start box to level 1 -->
-            <div class="arrow arrow-diagonal-left" style="top: 110px; left: 35%;"></div>
-            <div class="arrow arrow-down" style="top: 110px;"></div>
-            <div class="arrow arrow-diagonal-right" style="top: 110px; right: 35%;"></div>
-
             <div class="level-1">
-                <div class="box denial" data-popup="denial">
+                <div class="box denial" data-popup="denial" id="denial-box">
                     <p>I'm not an Anti-Semite, but ...</p>
                 </div>
-                <div class="box replacement" data-popup="replacement">
+                <div class="box replacement" data-popup="replacement" id="replacement-box">
                     <p>Palestinians are the True Semites.</p>
                 </div>
-                <div class="box admission" data-popup="admission">
+                <div class="box admission" data-popup="admission" id="admission-box">
                     <p>Yes, I'm an Anti-Semite</p>
                 </div>
             </div>
 
-            <!-- Arrows from level 1 to level 2 -->
-            <div class="arrow arrow-down" style="top: 250px; left: 16.67%;"></div>
-            <div class="arrow arrow-down" style="top: 250px; left: 50%;"></div>
-            <div class="arrow arrow-down" style="top: 250px; right: 16.67%;"></div>
-
             <div class="level-2">
-                <div class="box distinguish" data-popup="distinguish">
+                <div class="box distinguish" data-popup="distinguish" id="distinguish-box">
                     <p>We need to distinguish between Zionists & Anti-Zionists</p>
                 </div>
-                <div class="box identity" data-popup="identity">
+                <div class="box identity" data-popup="identity" id="identity-box">
                     <p>The Jews have stolen their identity from the Arabs</p>
                 </div>
-                <div class="box hitler" data-popup="hitler">
-                    <p>Hitler was our Hero</p>
+                <div class="box hitler" data-popup="hitler" id="hitler-box">
+                    <p>Hitler is our Hero</p>
                 </div>
             </div>
 
-            <!-- Arrows from level 2 to level 3 -->
-            <div class="arrow arrow-down" style="top: 410px; left: 16.67%;"></div>
-            <div class="arrow arrow-down" style="top: 410px; left: 50%;"></div>
-            <div class="arrow arrow-down" style="top: 410px; right: 16.67%;"></div>
-
             <div class="level-3">
-                <div class="box racism" data-popup="racism">
+                <div class="box racism" data-popup="racism" id="racism-box">
                     <p>Zionism is Racism</p>
                 </div>
-                <div class="box promised-land" data-popup="promised-land">
+                <div class="box promised-land" data-popup="promised-land" id="promised-land-box">
                     <p>The Jews stole the Promised Land</p>
                 </div>
-                <div class="box destroy" data-popup="destroy">
+                <div class="box destroy" data-popup="destroy" id="destroy-box">
                     <p>The Jews need to be Destroyed</p>
                 </div>
             </div>
 
-            <!-- Arrows from level 3 to conclusion -->
-            <div class="arrow arrow-diagonal-left" style="top: 570px; left: 25%; transform: rotate(45deg) translateX(-50%);"></div>
-            <div class="arrow arrow-down" style="top: 570px;"></div>
-            <div class="arrow arrow-diagonal-right" style="top: 570px; right: 25%; transform: rotate(-45deg) translateX(50%);"></div>
-
-            <div class="conclusion">
+            <div class="conclusion" id="conclusion-box">
                 <p>It all boils down to Jew-hatred, the world's oldest hatred.</p>
             </div>
         </div>
@@ -82,6 +68,7 @@
         <div class="educational-note">
             <h3>Educational Purpose</h3>
             <p>This interactive guide helps identify common antisemitic rhetoric patterns. Click on each box to learn about these harmful narratives and how to recognize them.</p>
+            <p>While loosely based upon the IHRA working definitions of Anti-Semitism, readers are encouraged to discover the subject for themselves.</p>
         </div>
     </main>
 
